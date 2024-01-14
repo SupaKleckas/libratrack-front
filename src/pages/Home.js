@@ -1,16 +1,12 @@
 //Home.js
-import { useNavigate } from 'react-router-dom';
+import { Container, Typography} from "@mui/material"
 
 const Home = () => {
    return (
-      <div className="container">
-         <div className="row min-vh-100">
-            <div className='col d-flex flex-column justify-content-start align-items-center'>
-               <h1>LibraTrack</h1>
-               <h4>Library management system</h4>
-            </div>
-         </div>
-      </div>
+      <Container>
+         <Typography variant='h2' sx={{fontFamily:'Open Sans, sans-serif', alignContent:'center', textAlign: 'center'}}> LibraTrack</Typography>
+         <Typography variant='h4' sx={{fontFamily:'Open Sans, sans-serif', alignContent:'center', textAlign: 'center'}}> Library management system</Typography>
+      </Container>
    );
 };
 

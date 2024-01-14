@@ -106,7 +106,7 @@ export default function EditBook({ onUpdate, libraryid, section, book }) {
                 <EditIcon></EditIcon>
                 Edit
             </Button>
-            <Dialog open={open} onClose={handleClose}>
+            <Dialog open={open} onClose={handleClose} maxWidth="md" fullWidth>
                 <DialogTitle sx={{ textAlign: "center" }}>Edit book information</DialogTitle>
                 <DialogContent>
                 <TextField
